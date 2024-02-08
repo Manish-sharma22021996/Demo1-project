@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Form</title>
+</head>
+<body>
+    <main>
+       <form action="#" method="post">
+        <h1>New Connection Registration Form</h1>
+        <div class="div-unit">
+            <div class="labletext">
+              <label for="email">Email: </label>
+            </div>
+            <div class="input">
+                <input class="input-style" type="email" name="email" placeholder="Email" required>
+            </div>
+        </div>
+        <div class="div-unit">
+            <div class="labletext">
+              <label for="tel">Phone Number: </label>
+            </div>
+            <div class="input">
+                <input class="input-style" type="tel" name="mobNo." placeholder="PhoneNo." required>
+            </div>
+        </div>
+        <div class="div-unit">
+            <div class="labletext">
+              <label for="FullName">Full Name: </label>
+            </div>
+            <div class="input">
+                <input class="input-style" type="text" name="fname" placeholder="FirstName" required>
+                <input class="input-style" type="text" name="lname" placeholder="LastName" required>
+            </div>
+        </div>
+        <div class="div-unit">
+            <div class="labletext">
+              <label  for="address">Address: </label>
+            </div>
+            <div class="input">
+                <input class="input-style" type="text" name="add" placeholder="flat No." required>
+                <input class="input-style" type="text" name="add" placeholder="town" required>
+            </div>
+        </div>
+        <div class="div-unit">
+            <div class="labletext">
+              <label for="City">City: </label>
+            </div>
+            <div class="input">
+                <input class="input-style" type="text" name="city" placeholder="City" required>
+                <select class="input-style" name="state" id="state">
+                    <option value="UP">Uttar Pradesh</option>
+                    <option value="Raj">Rajasthan</option>
+                    <option value="MH">Maharastra</option>
+                    <option value="MP">Madhya Pradesh</option>
+                </select>
+                <input class="input-style" type="text" name="pincode" placeholder="Pincode" required maxlength="6">
+
+            </div>
+        </div>
+        <div class="div-unit">
+            <div class="labletext">
+              <label  for="tech">What radio technology are you using? </label>
+            </div>
+            <div class="input">
+                <input class="checkbox" type="checkbox" name="2G">2G
+                <input class="checkbox" type="checkbox" name="3G">3G
+                <input class="checkbox" type="checkbox" name="4G">4G
+                <input class="checkbox" type="checkbox" name="5G">5G
+            </div>
+        </div>
+       
+        <div class="div-unit">
+            <div>
+              <label for="tech">How much data do you use in a month? </label>
+            </div>
+            <div class="input">
+                <input class="checkbox" type="radio" name="data">50-150MB
+                <input class="checkbox" type="radio" name="data">150-250MB
+                <input class="checkbox" type="radio" name="data">250-550MB
+                <input class="checkbox" type="radio" name="data">550+MB
+            </div>
+        </div>
+        <div class="div-unit">
+            <div class="labletext">
+              <label  for="duration">Subs Duration: </label>
+            </div>
+            <div class="input">
+                From  <input type="datetime-local" name="from" >
+                To  <input type="datetime-local" name="to" >
+            </div>
+        </div>
+        <div class="div-unit btn">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+       </form>
+    </main>
+</body>
+</html>
